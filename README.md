@@ -1,7 +1,7 @@
-## MNS Node.js Client 
+## CLoud EventBridge Client 
 
 ## What is this?
-Node.js web client that excercises the AliCLoud MNS functionality
+Node.js web client that excercises the AliCLoud MQ functionality
 
 
 ## Credentials
