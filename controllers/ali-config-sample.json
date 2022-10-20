@@ -1,0 +1,23 @@
+{ 
+    "accountid": "182572506xxxxxxxx",
+    "region": "cn-hangzhou",
+    "accessKeyId": "LTAI5tPR13AQwFixxxxxxx",
+    "accessKeySecret": "UyHbwZL8ir6c5I4yh4tRxxxxxxxx",
+
+    
+    "secure": "false",
+    "internal": "false",
+    "vpc": "false",
+    "queuename": "canmengxxxxxxx",
+
+    "host": "rm-bxxxxxxx775fo.mysql.rds.aliyuncs.com",
+    "port": 3306,
+    "user": "testxxxxxxx",
+    "password": "xxxxxxx",
+    "database": "xxxxxxx",
+    "tablename": "xxxxxxx",
+
+    "ebendpoint": "rm-bp1071zzcxxxxxxx.mysql.rds.aliyuncs.com",
+    "evnetbusname": "xxxxxxx"
+
+}

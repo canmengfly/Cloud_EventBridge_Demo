@@ -1,0 +1,41 @@
+<% include ./partials/client_navbor.ejs %>
+
+		<div id="site">
+		<div id="content">
+			<h2>购物车</h2>
+			<form id="shopping-cart" action="cart" method="post">
+				<table class="shopping-cart">
+				  <thead>
+					<tr>
+						<th scope="col">Item</th>
+						<th scope="col">Qty</th>
+						<th scope="col">Price</th>
+					</tr>
+				  </thead>
+				  <tbody>
+				  
+				  </tbody>
+				</table>
+				<p id="sub-total">
+					<strong>Sub Total</strong>: <span id="stotal"></span>
+				</p>
+				<ul id="shopping-cart-actions">
+					<!-- <li>
+						<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+					</li> -->
+					<li>
+						<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+					</li>
+					<li>
+						<a href="client" class="btn">Continue Shopping</a>
+					</li>
+					<li>
+						<a href="checkout" class="btn">Go To Checkout</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

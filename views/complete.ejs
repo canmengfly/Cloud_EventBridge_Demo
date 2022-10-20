@@ -1,0 +1,59 @@
+<% include ./partials/client_navbor.ejs %>
+
+		<div id="site">
+		<h2>骑手页</h2>
+
+		<div id="content">
+				<table class="shopping-cart">
+				  <thead>
+					<tr>
+						<th scope="col">name</th>
+						<!-- <th scope="col">email</th> -->
+						<th scope="col">telephone</th>
+                        <th scope="col">city</th>
+                        <th scope="col">address</th>
+                        <th scope="col">country</th>
+                        <!-- <th scope="col">total</th> -->
+                        <!-- <th scope="col">state</th> -->
+						<th scope="col">操作</th>
+					</tr>
+				  </thead>
+
+                  <% for(var i=0;i<data.length;i++){ %>
+                    <tr>
+                        <td><%= data[i].name %></td>
+                        <!-- <td><%= data[i].email %></td> -->
+                        <td><%= data[i].telephone %></td>
+                        <td><%= data[i].city %></td>
+                        <td><%= data[i].address %></td>
+                        <td><%= data[i].country %></td>
+                        <!-- <td><%= data[i].total %></td> -->
+                        <!-- <td><%= data[i].state %></td> -->
+                        <td>
+							<form action="/mnsqueue-queue/message" method="post">
+								<input type="hidden" name="total" value= <%= data[i].total %> />
+								<input type="hidden" name="name" value= <%= data[i].name %> />
+								<input type="hidden" name="email" value= <%= data[i].email %> />
+								<input type="hidden" name="zip" value= <%= data[i].telephone %> />
+								<input type="hidden" name="city" value= <%= data[i].city %> />
+								<input type="hidden" name="address" value= <%= data[i].address %> />
+								<input type="hidden" name="country" value= <%= data[i].country %> />
+								<input type="hidden" name="id" value= <%= data[i].id %> />
+								<input type="hidden" name="state" value= "已送达" /> <!-- 修改订单状态 -->
+								<strong><input type='submit' value='订单送达'/></strong> 
+							</form>
+						</td>
+                    </tr>
+                    <% } %>
+
+				  <tbody>
+				  
+				  </tbody>
+				</table>
+
+
+
+	</div>
+	</div>
+</body>
+</html>

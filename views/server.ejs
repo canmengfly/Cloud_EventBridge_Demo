@@ -1,0 +1,56 @@
+<% include ./partials/client_navbor.ejs %>
+
+		<div id="site">
+		<h2>商户订单页</h2>
+
+		<div id="content">
+				<table class="shopping-cart">
+				  <thead>
+					<tr>
+            <!-- <th scope="col">id</th> -->
+						<th scope="col">name</th>
+						<th scope="col">email</th>
+						<th scope="col">telephone</th>
+                        <th scope="col">city</th>
+                        <th scope="col">address</th>
+                        <th scope="col">country</th>
+                        <th scope="col">total</th>
+                        <th scope="col">state</th>
+					</tr>
+				  </thead>
+
+                  <% for(var i=0;i<data.length;i++){ %>
+                    <tr>
+                        <!-- <td><%= data[i].id %></td> -->
+                        <td><%= data[i].name %></td>
+                        <td><%= data[i].email %></td>
+                        <td><%= data[i].telephone %></td>
+                        <td><%= data[i].city %></td>
+                        <td><%= data[i].address %></td>
+                        <td><%= data[i].country %></td>
+                        <td><%= data[i].total %></td>
+                        <td><%= data[i].state %></td>
+                        <!-- <td><strong>删除</strong><strong>查看</strong><strong>编辑</strong></td> -->
+                    </tr>
+                    <% } %>
+
+				  <tbody>
+				  
+				  </tbody>
+				</table>
+
+
+
+	</div>
+
+<br>
+<br>
+<br>
+  <a href="/server"><button type="button" >刷新订单</button></a>
+  <br>
+  <br>
+  <br>
+
+	</div>
+</body>
+</html>
