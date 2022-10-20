@@ -1,4 +1,4 @@
-## CLoud EventBridge Client 
+## CLoud EventBridge Client Demo
 
 ## What is this?
 Node.js web client that excercises the AliCLoud MQ functionality
